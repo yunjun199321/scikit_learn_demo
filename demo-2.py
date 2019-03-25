@@ -24,3 +24,9 @@ plt.show()
 ## 这是这个model自带的属性，斜率和截距（与Y轴）
 print(model.coef_)
 print(model.intercept_)
+
+## 取出之前定义的参数
+print(model.get_params())
+
+## 对model用R^2 的方式打分
+print(model.score(data_x, data_y))
